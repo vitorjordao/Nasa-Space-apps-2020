@@ -10,15 +10,15 @@ function Graphic() {
         <>
             <header className="graphic" >
                 <section className="graphic__options">
-                    <h1 className="graphic__options__header">Selecione o tipo de pequisa</h1>
+                    <h1 className="graphic__options__header">Select search type</h1>
                     <div className="graphic__options__options">
                         <div onClick={()  => setIsCountry(true)}>
                             <input type="radio" id="country" name="information-type" defaultChecked />
-                            <label htmlFor="country">Países</label>
+                            <label htmlFor="country">Countries</label>
                         </div>
                         <div onClick={()  => setIsCountry(false)}>
                             <input type="radio" id="industry" name="information-type" />
-                            <label htmlFor="industry">Setores económicos</label>
+                            <label htmlFor="industry">Economic sectors</label>
                         </div>
                     </div>
                 </section>
@@ -28,12 +28,12 @@ function Graphic() {
                             <Map />
                         </section>:
                         <section className="graphic__economic-data">
-                            <div>Produção de eletricidade e calor: responsável por cerca de 25% da emissão dos gases em 2010.</div>
-                            <div>Agricultura e usos da terra: responsável por cerca de 24% da emissão global em 2010.</div>
-                            <div>Indústria: responsável por cerca de 21% da emissão global em 2010.</div>
-                            <div>Transporte: responsável por cerca de 14% da emissão global em 2010.</div>
-                            <div>Edifícios: responsável por cerca de 6% da emissão global.</div>
-                            <div>Outra energia: 10% setor de energia que não está diretamente ligado a produção de eletricidade ou calor.</div>
+                            <div>Electricity and heat production: responsible for around 25% of gas emissions in 2010.</div>
+                            <div>Agriculture and land use: responsible for around 24% of global emissions in 2010.</div>
+                            <div>Industry: responsible for approximately 21% of global emissions in 2010.</div>
+                            <div>Transport: responsible for around 14% of global emissions in 2010.</div>
+                            <div>Buildings: responsible for about 6% of global emissions.</div>
+                            <div>Another energy: 10% energy sector that is not directly linked to the production of electricity or heat.</div>
                         </section>
                 }
             </header>

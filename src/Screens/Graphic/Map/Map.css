@@ -1,0 +1,45 @@
+.map {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+}
+
+.map__country {
+    fill: #505050;
+    stroke: rgba(255, 255, 255, 0.7);
+    stroke-width: 1;
+}
+
+.map__country.selected {
+    stroke: rgba(28, 255, 58, 0.945);
+    stroke-width: 8;
+}
+
+.map__country.lvl1 {
+    fill: #fff344;
+}
+
+.map__country.lvl2 {
+    fill: #ff9100;
+}
+
+.map__country.lvl3 {
+    fill: #ff0000;
+}
+
+.data {
+    margin: 1rem 0;
+    padding: 1rem;
+    font-weight: 1.5rem;
+    background-color: rgb(196, 196, 196);
+    border-radius: 0.3rem;
+}
+
+.data__title {
+    text-align: center;
+}
+
+.data__body__img>* {
+    margin-top: 1rem;
+    max-width: 90%;
+}
